@@ -11,12 +11,16 @@ class Products extends Component {
         axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/products/${i}`)
             .then(data =>{
              var div =  document.createElement("Div")
-             var img =  document.createElement("img")
+             var photo =  document.createElement("img")
              var p = document.createElement("p")
               
-             img.setAttribute("src", data.data.data.img)
+             photo.setAttribute("src", data.data.data.img)
+             photo.setAttribute("width", "290px");
+             photo.setAttribute("height", "228");
+             div.setAttribute("width", "300px");
+             div.setAttribute("height", "300px");
              p.innerHTML = data.data.data.name
-             div.appendChild(img)
+             div.appendChild(photo)
              div.appendChild(p)
           document.getElementById("products").appendChild(div)
                     console.log(data)
