@@ -20,7 +20,7 @@ class Process extends Component {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img className="img-fluid" src="images/portfolio/01-full.jpg" alt=""></img>
+              <img className="img-fluid" src="images/hairstyle/Screen Shot 2020-01-12 at 3.42.35 PM.png" alt=""></img>
             </a>
             <div className="portfolio-caption">
               <h4>Threads</h4>
@@ -34,7 +34,7 @@ class Process extends Component {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img className="img-fluid" src="images/portfolio/02-full.jpg" alt=""></img>
+              <img className="img-fluid" src="images/hairstyle/Screen Shot 2020-01-12 at 3.45.01 PM.png" alt=""></img>
             </a>
             <div className="portfolio-caption">
               <h4>Explore</h4>
@@ -48,7 +48,7 @@ class Process extends Component {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img className="img-fluid" src="images/portfolio/03-full.jpg" alt=""></img>
+              <img className="img-fluid" src="images/hairstyle/Screen Shot 2020-01-12 at 3.45.20 PM.png" alt=""></img>
             </a>
             <div className="portfolio-caption">
               <h4>Finish</h4>
@@ -62,7 +62,7 @@ class Process extends Component {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img className="img-fluid" src="images/portfolio/05-full.jpg" alt=""></img>
+              <img className="img-fluid" src="images/hairstyle/Screen Shot 2020-01-12 at 3.46.54 PM.png" alt=""></img>
             </a>
             <div className="portfolio-caption">
               <h4>Lines</h4>
@@ -76,7 +76,7 @@ class Process extends Component {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img className="img-fluid" src="images/portfolio/04-full.jpg" alt=""></img>
+              <img className="img-fluid" src="images/hairstyle/Screen Shot 2020-01-12 at 3.47.42 PM.png" alt=""></img>
             </a>
             <div className="portfolio-caption">
               <h4>Southwest</h4>
@@ -90,7 +90,7 @@ class Process extends Component {
                   <i className="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img className="img-fluid" src="images/portfolio/06-full.jpg" alt=""></img>
+              <img className="img-fluid" src="images/hairstyle/Screen Shot 2020-01-12 at 3.49.01 PM.png" alt=""></img>
             </a>
             <div className="portfolio-caption">
               <h4>Window</h4>
