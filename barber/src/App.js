@@ -4,6 +4,8 @@ import './App.css';
 import Products from './Products';
 import Services from './Services'
 import Branches from './Branches';
+import Nav from './Nav';
+import Home from './Home';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
  
