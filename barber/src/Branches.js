@@ -13,7 +13,7 @@ class Branches extends Component {
     }
     return (
       <div>
-    <p>Loction</p>
+    <p>Loction1</p>
     <Map google={this.props.google} zoom={14}   
        style={style}
       initialCenter={{

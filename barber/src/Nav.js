@@ -1,26 +1,20 @@
-import React ,{Component} from 'react';
-import './App.css';
- import Branches from './Branches';
-import db from './Db';
-import Nav from './Nav'
+import React, {Component} from 'react';
+import Products from './Products';
 import Home from './Home';
- import {
+import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'; 
-import Products from './Products';
- 
- class App extends Component {
 
-   render(){
+class Nav extends Component {
+  render () {
+    return (
  
-  return (
-    <Router>
-     
-    <div className="App">
-     <nav>
-     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <Router>
+    
+  
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">
         <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +30,7 @@ import Products from './Products';
               <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about"><Link to="/Branches"> Branches</Link>About</a>
+              <a className="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger"  ><Link to="/"> Home</Link></a>
@@ -48,18 +42,9 @@ import Products from './Products';
         </div>
       </div>
     </nav>
-     </nav>
-      <div>
-     <Route exact path="/"  ><Home cut={db}></Home></Route>
-      <Route  path="/products" component={Products} />  
-      <Route  path="/Branches" component={Branches} />
-      </div>
-      
-      
-    
-            </div>
-            </Router>
-  )}
-        }  
-        
-   export default App ;
+
+    </Router>
+   
+    )}}
+
+export default Nav;

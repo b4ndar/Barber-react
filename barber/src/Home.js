@@ -1,22 +1,36 @@
 import React, { Component } from 'react';
-import CutHeair from './CutHeair'
+import Services from './Services'
+import header from "./header.jpg";
+import './Home.css'
+
 
 class Home extends Component {
+
+
+    
     render() {
         return (
-            <div>
-                <h1>Home</h1>
-                {this.props.cut.map((cutheair)=> (
- <CutHeair  price ={cutheair.price} name={cutheair.title}  des={cutheair.description} ></CutHeair>
-                ))
-                }
-            
-            
-               
+  <div>
+            <header className="masthead">
                 
+               
+            <div className="container">
+            
+              <div className="intro-text img/header-bg.jpg">
+                <div className="intro-lead-in">Welcome To Our Studio!
+                {/* <img src={header} alt="header" ></img> */}
+                </div>
+                <div className="intro-heading text-uppercase">It's Nice To Meet You</div>
+                <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+              </div>
             </div>
-        );
-    }
-}
+          </header>
+          <Services/>
+          
+          </div>
+          
+        )}}
+
+
 
 export default Home;

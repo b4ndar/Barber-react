@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios' ;
 class Products extends Component {
+
     componentDidMount(){
   
         for(var i =0 ; i<20 ; i++){
@@ -29,7 +30,7 @@ class Products extends Component {
     render(){
         return(
             <div id="products">
-                
+                <h1>products</h1>
             </div>
         );
     }
