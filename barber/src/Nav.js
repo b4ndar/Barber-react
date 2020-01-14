@@ -1,10 +1,19 @@
 import React, {Component} from 'react';
+import Products from './Products';
+import Home from './Home';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'; 
 
 class Nav extends Component {
   render () {
     return (
+ 
+      <Router>
+    
   
-
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">
         <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
@@ -24,15 +33,18 @@ class Nav extends Component {
               <a className="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a className="nav-link js-scroll-trigger"  ><Link to="/"> Home</Link></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a className="nav-link js-scroll-trigger"> <Link to="/products">products</Link> </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    </Router>
+   
     )}}
 
 export default Nav;
