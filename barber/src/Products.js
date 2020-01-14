@@ -5,9 +5,7 @@ class Products extends Component {
   
         for(var i =0 ; i<20 ; i++){
 
-         if(!i){
-             continue
-         }
+         
         axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/products/${i}`)
             .then(data =>{
              var div =  document.createElement("Div")
