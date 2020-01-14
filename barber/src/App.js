@@ -36,7 +36,7 @@ import Products from './Products';
               <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about"><Link to="/Branches"> Branches</Link>About</a>
+              <a className="nav-link js-scroll-trigger" href="#about"><Link to="/Branches"> Branches</Link></a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger"  ><Link to="/"> Home</Link></a>
