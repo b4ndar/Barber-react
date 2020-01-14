@@ -1,22 +1,37 @@
-import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
-import { Card } from 'react-bootstrap';
-
+import React, {Component} from 'react';
+import axios from 'axios' ;
 class Products extends Component {
-    render() {
-        return (
-            <div>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
+    componentDidMount(){
+  
+        for(var i =0 ; i<20 ; i++){
+
+         if(!i){
+             continue
+         }
+        axios.get(`https://cors-anywhere.herokuapp.com/https://barbernew1.herokuapp.com/products/${i}`)
+            .then(data =>{
+             var div =  document.createElement("Div")
+             var photo =  document.createElement("img")
+             var p = document.createElement("p")
+              
+             photo.setAttribute("src", data.data.data.img)
+             photo.setAttribute("width", "290px");
+             photo.setAttribute("height", "228");
+             div.setAttribute("width", "300px");
+             div.setAttribute("height", "300px");
+             p.innerHTML = data.data.data.name
+             div.appendChild(photo)
+             div.appendChild(p)
+          document.getElementById("products").appendChild(div)
+                    console.log(data)
+        }) }}
+    
+
+
+    render(){
+        return(
+            <div id="products">
+                
             </div>
         );
     }

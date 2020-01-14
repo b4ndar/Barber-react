@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+#map1{
+  height: 100px;
+  width: 100px;
+}
 
 .App-logo {
   height: 40vmin;
