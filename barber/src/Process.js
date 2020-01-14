@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Branches extends Component {
+class Process extends Component {
   render () {
     return (
       <div>
-    <p>Loction</p>
+    <p>Process</p>
       </div>
     );
   }
 }
 
-export default Branches;
+export default Process;
