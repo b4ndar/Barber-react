@@ -5,11 +5,6 @@ import Products from './Products';
 import Services from './Services'
 import Branches from './Branches';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-import Nav from './Nav';
-import Home from './Home';
-
-
-
  
  
  class App extends Component {

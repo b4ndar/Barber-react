@@ -34,5 +34,5 @@ class Nav extends Component {
       </div>
     </nav>
     )}}
-    export default Nav;
-    
+
+export default Nav;
