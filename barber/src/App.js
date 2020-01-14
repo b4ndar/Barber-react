@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <Services></Services>
+      <Products></Products>
     </div>
   );
 }
 
-export default App;
+export default App; 
+
