@@ -16,6 +16,8 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
     }
   return (
     <div className="App">
+      <Nav></Nav>
+      <Home></Home>
       <Services></Services>
       <Products/>
        
