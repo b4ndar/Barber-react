@@ -2,97 +2,64 @@ import React, { Component } from 'react'
 
 
 export default function About(){
-
-        
-    return(
-                
-            
-           
-        <section className="page-section" id="about">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">About</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <ul className="timeline">
-                <li>
-                  <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/1.jpg" alt="" />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>2009-2011</h4>
-                      <h4 className="subheading">Our Humble Beginnings</h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted">
-                  <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/2.jpg" alt="" />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>March 2011</h4>
-                      <h4 className="subheading">An Agency is Born</h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/3.jpg" alt="" />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>December 2012</h4>
-                      <h4 className="subheading">Transition to Full Service</h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted">
-                  <div className="timeline-image">
-                    <img className="rounded-circle img-fluid" src="img/about/4.jpg" alt=""/>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>July 2014</h4>
-                      <h4 className="subheading">Phase Two Expansion</h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted">
-                  <div className="timeline-image">
-                    <h4>Be Part
-                      <br/>Of Our
-                      <br/>Story!</h4>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+        return(
+            <div id="about">
+                <section className="bg-light page-section" id="team">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12 text-center">
+          <h2 className="section-heading text-uppercase">About Us</h2>
+          <h3 className="section-subheading text-muted">Refine Men’s Salons is comprised of a group of independent top tier men’s salons across the country who are allowed to carry the Refine name by invitation only. We strive for excellence in all areas: service, atmosphere, employees. We aim to create an environment where gentlemen of all ages can come and receive the highest level of service.
+11:07
+We take pride in offering the best in men’s grooming. Whether it’s men’s haircuts, hair coloring, shaves, facials, waxing or any of our other services, we are here to help our clients refine themselves to the best they can be.</h3>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
+  <footer className="footer">
+    <div className="container">
+      <div className="row align-items-center">
+        <div className="col-md-4">
+          <span className="copyright">Copyright &copy; Barber Shops 2020</span>
+        </div>
+        <div className="col-md-4">
+          <ul className="list-inline social-buttons">
+            <li className="list-inline-item">
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li className="list-inline-item">
+              <a href="#">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li className="list-inline-item">
+              <a href="#">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="col-md-4">
+          <ul className="list-inline quicklinks">
+            <li className="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li className="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+            </div>
+
+
+
+            
+        )
+    }
+
     
-
-    )
-
-    };
-
-
-
-
