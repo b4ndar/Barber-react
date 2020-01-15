@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import Services from './Services'
 import './Home.css'
+import Proceess from './Process';
+import About from './About';
+
 
 class Home extends Component {
 
@@ -7,7 +11,7 @@ class Home extends Component {
     
     render() {
         return (
-  
+  <div>
             <header className="masthead">
                 
                
@@ -21,6 +25,12 @@ class Home extends Component {
               </div>
             </div>
           </header>
+          <Services/>
+          <Proceess/>
+          <About/>
+          
+          </div>
+          
         )}}
 
 

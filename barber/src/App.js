@@ -1,54 +1,60 @@
 import React ,{Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Products from './Products';
-import Services from './Services'
-import Branches from './Branches';
-import Nav from './Nav';
+ import Branches from './Branches';
+import db from './Db';
+import Nav from './Nav'
 import Home from './Home';
-import Process from './Process';
-import About from './About';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
- 
+ import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'; 
+import Products from './Products';
  
  class App extends Component {
+
    render(){
-    const style = {
-      width: '30%',
-      height: '30%'
-    }
+ 
   return (
+    <Router>
+     
     <div className="App">
-      <Nav></Nav>
-      <Home></Home>
-      <Services></Services>
-      <Products/>
-      <Process/>
-      <About/>
+     <nav>
+     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div className="container">
+        <a className="navbar-brand js-scroll-trigger" href="#page-top">Barber</a>
+        <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i className="fas fa-bars"></i>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+          <ul className="navbar-nav text-uppercase ml-auto">
+            <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Branches"> Branches</Link></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/"> Home</Link></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/products">products</Link> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+     </nav>
+      <div>
+     <Route exact path="/"  ><Home cut={db}></Home></Route>
+      <Route  path="/products" component={Products} />  
+      <Route  path="/Branches" component={Branches} />
+      </div>
       
-       
-      <Map google={this.props.google} zoom={14}   
-       style={style}
-      initialCenter={{
-        lat: 7.854885,
-        lng: -88.081807
-      }}>
- 
- <Marker onClick={this.onMarkerClick}
-         name={'Current location'} />
-
- <InfoWindow onClose={this.onInfoWindowClose}>
+      
     
- </InfoWindow>
-</Map>
-
-</div>
-    
-  );
-}
- }
- 
-export default GoogleApiWrapper({
-  apiKey: ("AIzaSyBUXuSM7TeowjHTgqZWSM8MG5CaX8epWdM")//real key needed
-})(App)
+            </div>
+            </Router>
+  )}
+        }  
+        
+   export default App ;
