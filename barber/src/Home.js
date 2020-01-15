@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import Services from './Services'
 import header from "./header.jpg";
 import './Home.css'
+import Proceess from './Process';
+
 
 class Home extends Component {
 
@@ -8,7 +11,7 @@ class Home extends Component {
     
     render() {
         return (
-  
+  <div>
             <header className="masthead">
                 
                
@@ -23,6 +26,11 @@ class Home extends Component {
               </div>
             </div>
           </header>
+          <Services/>
+          <Proceess/>
+          
+          </div>
+          
         )}}
 
 
