@@ -13,6 +13,7 @@ import Home from './Home';
 import Products from './Products';
 import Reservision from './Reservision';
  import Appointment from './Appointment';
+import AddProduct from './Addproduct';
   class App extends Component {
 
    render(){
@@ -57,6 +58,7 @@ import Reservision from './Reservision';
       <Route  path="/Branches" component={Branches} />
      <Route path="/Reservision" component={Reservision}> <Reservision></Reservision></Route>
      <Route path="/Appointment" component={Appointment} > <Appointment></Appointment> </Route>
+      <AddProduct></AddProduct>
       </div>
       
       
