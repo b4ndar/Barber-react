@@ -12,8 +12,6 @@ class Nav extends Component {
     return (
  
       <Router>
-    
-  
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">
         <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
