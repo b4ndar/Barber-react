@@ -4,15 +4,17 @@ import './App.css';
 import db from './Db';
 import Nav from './Nav'
 import Home from './Home';
-
+ 
  import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'; 
 import Products from './Products';
- 
- class App extends Component {
+import Reservision from './Reservision';
+ import Appointment from './Appointment';
+import AddProduct from './Addproduct';
+  class App extends Component {
 
    render(){
  
@@ -31,7 +33,13 @@ import Products from './Products';
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav text-uppercase ml-auto">
             <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Appointment"> Appointment</Link></a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Branches"> Branches</Link></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Reservision"> Reservision</Link></a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/"> Home</Link></a>
@@ -48,6 +56,9 @@ import Products from './Products';
      <Route exact path="/"  ><Home cut={db}></Home></Route>
       <Route  path="/products" component={Products} />  
       <Route  path="/Branches" component={Branches} />
+     <Route path="/Reservision" component={Reservision}> <Reservision></Reservision></Route>
+     <Route path="/Appointment" component={Appointment} > <Appointment></Appointment> </Route>
+      <AddProduct></AddProduct>
       </div>
       
       
