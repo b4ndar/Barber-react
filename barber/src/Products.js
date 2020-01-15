@@ -15,6 +15,7 @@ class Products extends Component {
              var photo =  document.createElement("img")
              var name = document.createElement("p")
              var price = document.createElement("p")
+             var des = document.createElement("p")
              
              photo.setAttribute("src", data.data.data.img)
             
@@ -26,12 +27,13 @@ class Products extends Component {
              div.setAttribute("style","border:1px; border-style:solid; border-color:#FFf000;padding:10px")
              name.innerHTML = data.data.data.name
              price.innerHTML =data.data.data.price
-            
+            des.innerHTML = data.data.data.description
              div.classList.add("col-md-4");
             
-
+             
              div.appendChild(photo)
              div.appendChild(name)
+             div.appendChild(des)
              div.appendChild(price)
 
          var s = document.getElementById("products")
