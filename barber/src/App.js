@@ -4,15 +4,15 @@ import './App.css';
 import db from './Db';
 import Nav from './Nav'
 import Home from './Home';
-
+ 
  import {
   BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'; 
 import Products from './Products';
-import AddProduct from './AddProduct';
- 
+import Reservision from './Reservision';
+ import Appointment from './Appointment';
  class App extends Component {
 
    render(){
@@ -35,6 +35,9 @@ import AddProduct from './AddProduct';
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Branches"> Branches</Link></a>
             </li>
             <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Reservision"> Reservision</Link></a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/"> Home</Link></a>
             </li>
             <li className="nav-item">
@@ -49,7 +52,8 @@ import AddProduct from './AddProduct';
      <Route exact path="/"  ><Home cut={db}></Home></Route>
       <Route  path="/products" component={Products} />  
       <Route  path="/Branches" component={Branches} />
-      <AddProduct></AddProduct>
+     <Route path="/Reservision" component={Reservision}> <Reservision></Reservision></Route>
+     <Appointment></Appointment>
       </div>
       
       
