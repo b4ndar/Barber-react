@@ -10,6 +10,7 @@ import Home from './Home';
   Link
 } from 'react-router-dom'; 
 import Products from './Products';
+import AddProduct from './AddProduct';
  
  class App extends Component {
 
@@ -53,6 +54,7 @@ import Products from './Products';
      <Route exact path="/"  ><Home cut={db}></Home></Route>
       <Route  path="/products" component={Products} />  
       <Route  path="/Branches" component={Branches} />
+      <AddProduct></AddProduct>
       </div>
       
       
