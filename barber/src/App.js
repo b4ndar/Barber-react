@@ -6,6 +6,8 @@ import Services from './Services'
 import Branches from './Branches';
 import Nav from './Nav';
 import Home from './Home';
+import Process from './Process';
+import About from './About';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
  
@@ -22,6 +24,9 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
       <Home></Home>
       <Services></Services>
       <Products/>
+      <Process/>
+      <About/>
+      
        
       <Map google={this.props.google} zoom={14}   
        style={style}
@@ -37,6 +42,7 @@ import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
     
  </InfoWindow>
 </Map>
+
 </div>
     
   );
