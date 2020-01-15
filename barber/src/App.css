@@ -5,6 +5,18 @@
   height: 100px;
   width: 100px;
 }
+.branch{
+flex-direction: row;
+ 
+}
+#mapp {
+display: ruby;
+background-repeat: repeat;
+  text-align: center;
+  color: black;
+
+  height: 100%;
+}
 
 .App-logo {
   height: 40vmin;

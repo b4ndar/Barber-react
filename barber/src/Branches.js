@@ -13,13 +13,35 @@ class Branches extends Component {
       width: '30%',
       height: '30%'
     }
+     
     return (
-      <div>
-    <p>Loction1</p>
+      
+      <div id="mapp">
+        
+    <div>
+    <p>Tahlia Branches</p>
     <Map google={this.props.google} zoom={14}   
        style={style}
       initialCenter={{
-        lat: 7.854885,
+        lat: 70.854885,
+        lng: -88.081807
+      }}>
+ 
+ <Marker onClick={this.onMarkerClick}
+         name={'Current location'}/>
+
+ <InfoWindow onClose={this.onInfoWindowClose}>
+    
+ </InfoWindow>
+</Map>
+
+
+<div style={{marginTop: "300px", justifyItems: 'center'}}>
+<p>Al Hamra Branche</p>
+    <Map google={this.props.google} zoom={14}   
+       style={style}
+      initialCenter={{
+        lat: 40.854885,
         lng: -88.081807
       }}>
  
@@ -31,9 +53,11 @@ class Branches extends Component {
  </InfoWindow>
 </Map>
 </div>
-    
+</div>
+</div>
+  
   );
-}
+ }
  }
  
 export default GoogleApiWrapper({
