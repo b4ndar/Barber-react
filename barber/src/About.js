@@ -1,22 +1,12 @@
-// eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react'
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
 
-} from 'react-router-dom';
 
 export default function About(){
 
         
     return(
                 
-            <Router>
-                <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-                    <Link to="/about">About</Link>
-                <Route exact path="/about" component={About}/>
-                </nav>
+            
            
         <section className="page-section" id="about">
         <div className="container">
@@ -97,7 +87,6 @@ export default function About(){
           </div>
         </div>
       </section>
-     </Router>
     
 
     )
