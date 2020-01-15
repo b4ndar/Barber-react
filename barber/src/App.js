@@ -13,7 +13,7 @@ import Home from './Home';
 import Products from './Products';
 import Reservision from './Reservision';
  import Appointment from './Appointment';
- class App extends Component {
+  class App extends Component {
 
    render(){
  
@@ -31,6 +31,9 @@ import Reservision from './Reservision';
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav text-uppercase ml-auto">
+            <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Appointment"> Appointment</Link></a>
+            </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="/"><Link className="nav-link" to="/Branches"> Branches</Link></a>
             </li>
@@ -53,7 +56,7 @@ import Reservision from './Reservision';
       <Route  path="/products" component={Products} />  
       <Route  path="/Branches" component={Branches} />
      <Route path="/Reservision" component={Reservision}> <Reservision></Reservision></Route>
-     <Appointment></Appointment>
+     <Route path="/Appointment" component={Appointment} > <Appointment></Appointment> </Route>
       </div>
       
       

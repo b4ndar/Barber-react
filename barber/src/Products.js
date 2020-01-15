@@ -124,7 +124,7 @@ class Products extends Component {
              div.appendChild(des)
              div.appendChild(price)
 
-         var s = document.getElementById("products")
+         var s = document.getElementById("products1")
         s.appendChild(div)
                     console.log(data)
         }) }}
@@ -143,7 +143,7 @@ class Products extends Component {
             <h3 className="section-subheading text-muted">All avilable products.</h3>
           </div>
         </div>
-        <div className="row" id="products">
+        <div className="row" id="products1">
            
         
     

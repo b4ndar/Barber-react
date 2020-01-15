@@ -23,7 +23,7 @@ class Appointment extends Component {
     div.appendChild(branchName)
     div.appendChild(time)
        
-         var s = document.getElementById("app")
+         var s = document.getElementById("app1")
     s.appendChild(div)
     })
 }
@@ -38,7 +38,7 @@ class Appointment extends Component {
         return (
             <div>
 <h1>Appointment</h1>
-<div id="app"></div>
+<div id="app1"></div>
                 
             </div>
         );
